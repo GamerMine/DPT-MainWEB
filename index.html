@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Site officiel de Don't Play Together</title>
+    <link rel="icon" href="/img/favicon.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_main.css" />
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head">
+      <a id="img_link" href="/index.html">
+        <img src="/img/DPT.png" alt="" id="dpt_img">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="http://join.dont-play-together.fr">Jouer</a></li>
+          <li class="deroulant"><a href="#">Installation</a>
+              <ul class="sous">
+                <li><a href="/install/client.html">Client</a></li>
+                <li><a href="/install/server.html">Serveur</a></li>
+              </ul>
+          </li>
+          <li><a href="/downloads.html">Téléchargements</a></li>
+          <li><a href="http://docs.dont-play-together.fr">Documentations</a></li>
+          <li><a href="/rules.html">Règles</a></li>
+          <li><a href="/others.html">Autres</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header id="mobile">
+      <a id="img_link" href="/index.html">
+        <img src="/img/DPT.png" alt="" id="dpt_img">
+      </a>
+      <navi id="nav">
+        <input id="menu_check" type="checkbox" class="menu_check">
+        <label for="menu_check" class="menu_toggle">&#9776;</label>
+        <ul class="menu">
+          <li><a href="http://join.dont-play-together.fr">Jouer</a></li>
+          <li><a href="#"></a>
+            <input id="menu_check_install" type="checkbox" class="menu_check_install">
+            <label for="menu_check_install" class="menu_toggle_install">Installation <a id="arrow">▼</a></label>
+              <ul class="submenu">
+                <li><a href="/install/client.html">Client</a></li>
+                <li><a href="/install/server.html">Serveur</a></li>
+              </ul>
+          </li>
+          <li><a href="/downloads.html">Téléchargements</a></li>
+          <li><a href="http://docs.dont-play-together.fr">Documentations</a></li>
+          <li><a href="/rules.html">Règles</a></li>
+          <li><a href="/others.html">Autres</a></li>
+        </ul>
+      </navi>
+    </header>
+    <img id="top_DPT_img" src="/img/index_main_DPT.jpg" alt="">
+    <div class="content">
+      <div id="explaining" data-aos="slide-right">
+        <h2>C'est quoi Don't Play Together ??</h2>
+        <p>Don't Play Together est un jeu interactif basé sur des votes dans lequel vous devrait survivre aux différents malus que les votes ont. Il est gratuit et open-source réalisé grâce à la bibliothèque <a class="orange" href="https://www.pygame.org/news">Pygame</a> sur <a class="orange" href="https://www.python.org/">Python</a>. Ce jeu à été développer en 2 mois et demi et est sujet à diverses changements.</p>
+      </div>
+    </div>
+    <img id="top_DPT_img" src="/img/index_editor_DPT.jpg" alt="" data-aos="fade-up">
+    <div class="content">
+      <div id="edit_game" data-aos="slide-left">
+        <h2>Créez vos propre niveaux !!</h2>
+        <p>Avec notre éditeur intégré, vous pourrez alors créer une infinité de niveau customisé !!</p>
+      </div>
+    </div>
+    <img id="top_DPT_img" src="/img/index_save_DPT.jpg" alt="" data-aos="fade-up">
+    <div class="content" data-aos="slide-right">
+      <div id="save_game">
+        <h2>Sauvegardez vos créations !!</h2>
+        <p>Après avoir éditer votre niveau, vous pouvez le sauvegarder grâce au raccourci CTRL+S et ainsi vous pourrez y jouer ou bien le rééditer à l'infinie...</p>
+      </div>
+    </div>
+    <img id="top_DPT_img" src="/img/index_play_DPT.jpg" alt="" data-aos="fade-up">
+    <div class="content">
+      <div id="play_game" data-aos="slide-left">
+        <h2>Jouez !!</h2>
+        <p>Le lancement du jeu se fait en 1 clique, alors n'hésitez plus !!</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500
+      });
+    </script>
+    <footer id="copyright">
+      <h4 id="copyright_text">© Copyright 2020, Dwight Studio (GamerMine, WhiteRed & Deleranax).</h4>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Site officiel de Don't Play Together</title>
+    <link rel="icon" href="/img/favicon.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_main.css">
+    <link rel="stylesheet" href="/css/downloads_page.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_downloads.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head">
+      <a id="img_link" href="/index.html">
+        <img src="/img/DPT.png" alt="" id="dpt_img">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="http://join.dont-play-together.fr">Jouer</a></li>
+          <li class="deroulant"><a href="#">Installation</a>
+              <ul class="sous">
+                <li><a href="/install/client.html">Client</a></li>
+                <li><a href="/install/server.html">Serveur</a></li>
+              </ul>
+          </li>
+          <li><a href="/downloads.html">Téléchargements</a></li>
+          <li><a href="http://docs.dont-play-together.fr">Documentations</a></li>
+          <li><a href="/rules.html">Règles</a></li>
+          <li><a href="/others.html">Autres</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header id="mobile">
+      <a id="img_link" href="/index.html">
+        <img src="/img/DPT.png" alt="" id="dpt_img">
+      </a>
+      <navi id="nav">
+        <input id="menu_check" type="checkbox" class="menu_check">
+        <label for="menu_check" class="menu_toggle">&#9776;</label>
+        <ul class="menu">
+          <li><a href="http://join.dont-play-together.fr">Jouer</a></li>
+          <li><a href="#"></a>
+            <input id="menu_check_install" type="checkbox" class="menu_check_install">
+            <label for="menu_check_install" class="menu_toggle_install">Installation <a id="arrow">▼</a></label>
+              <ul class="submenu">
+                <li><a href="/install/client.html">Client</a></li>
+                <li><a href="/install/server.html">Serveur</a></li>
+              </ul>
+          </li>
+          <li><a href="/downloads.html">Téléchargements</a></li>
+          <li><a href="http://docs.dont-play-together.fr">Documentations</a></li>
+          <li><a href="/rules.html">Règles</a></li>
+          <li><a href="/others.html">Autres</a></li>
+        </ul>
+      </navi>
+    </header>
+    <div class="content">
+      <h1>Téléchargements</h1>
+      <div>
+        <div id="last_ver">
+          <h2>Dernière version (1.0.0-BETA) :</h2>
+          <p>Cliquez sur votre système pour télécharger le jeu :</p>
+          <div id="select1">
+            <div id=windows>
+              <span id="win_text">Windows</span>
+              <img src="/img/windows.png" alt="" id="win_img">
+              <a href="https://github.com/Deleranax/DPT-Client/releases/download/BETA-1.0.0/dpt_1.0.0-BETA-Windows.exe" download class="button" id="win_download_button">Client</a>
+            </div>
+            <div id=debian>
+              <span id="deb_text">Debian</span>
+              <img src="/img/debian.png" alt="" id="deb_img">
+              <a href="https://github.com/Deleranax/DPT-Client/releases/download/BETA-1.0.0/dpt_1.0.0-BETA-Linux.deb" download class="button" id="debc_download_button">Client</a>
+            </div>
+          </div>
+        </div>
+        <div id="source_code">
+          <h2>Code source :</h2>
+          <p>Voici les différents repositories du projets :</p>
+          <div id="select2">
+            <div id="dpt_web">
+              <span id="web_text">Serveur</span>
+              <img src="/img/github.png" alt="" id="git_img">
+              <a href="https://github.com/Deleranax/DPT-Web" class="button" id="web_download_button">Aller</a>
+            </div>
+            <div id="dpt_client">
+              <span id="client_text">Client</span>
+              <img src="/img/github.png" alt="" id="git_img">
+              <a href="https://github.com/Deleranax/DPT-Client" class="button" id="client_download_button">Aller</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="copyright">
+      <h4 id="copyright_text">© Copyright 2020, Dwight Studio (GamerMine, WhiteRed & Deleranax).</h4>
+    </footer>
+  </body>
+</html>

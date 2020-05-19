@@ -1,0 +1,93 @@
+@media screen and (max-width: 1280px)
+{
+  body {
+    margin: 0;
+  }
+
+  .content {
+    animation-name: fade-in;
+    animation-duration: 4s;
+    margin: 0;
+    font-family: "VT323";
+    margin: 0px 5%;
+    height: 100%;
+    z-index: 50;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  h1 {
+    z-index: 0;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 150px;
+  }
+
+  h2 {
+    font-size: 100px;
+  }
+
+  p {
+    font-size: 60px;
+  }
+
+  .orange {
+    color: #FF5721;
+  }
+
+  #top_DPT_img {
+    position: relative;
+    animation-name: top_dpt_img_fade-in;
+    animation-duration: 3s;
+    text-align: center;
+    width: 100%;
+    z-index: -50;
+  }
+
+  @keyframes top_dpt_img_fade-in {
+    0% {
+      opacity: 0%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  #explaining {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+
+  #edit_game {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+
+  #save_game {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+
+  #play_game {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+
+}

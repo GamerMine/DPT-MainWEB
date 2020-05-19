@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Site officiel de Don't Play Together</title>
+    <link rel="icon" href="/img/favicon.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_main.css">
+    <link rel="stylesheet" href="/css/install_client.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_client.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head">
+      <a id="img_link" href="/index.html">
+        <img src="/img/DPT.png" alt="" id="dpt_img">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="http://join.dont-play-together.fr">Jouer</a></li>
+          <li class="deroulant"><a href="#">Installation</a>
+              <ul class="sous">
+                <li><a href="/install/client.html">Client</a></li>
+                <li><a href="/install/server.html">Serveur</a></li>
+              </ul>
+          </li>
+          <li><a href="/downloads.html">Téléchargements</a></li>
+          <li><a href="http://docs.dont-play-together.fr">Documentations</a></li>
+          <li><a href="/rules.html">Règles</a></li>
+          <li><a href="/others.html">Autres</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header id="mobile">
+      <a id="img_link" href="/index.html">
+        <img src="/img/DPT.png" alt="" id="dpt_img">
+      </a>
+      <navi id="nav">
+        <input id="menu_check" type="checkbox" class="menu_check">
+        <label for="menu_check" class="menu_toggle">&#9776;</label>
+        <ul class="menu">
+          <li><a href="http://join.dont-play-together.fr">Jouer</a></li>
+          <li><a href="#"></a>
+            <input id="menu_check_install" type="checkbox" class="menu_check_install">
+            <label for="menu_check_install" class="menu_toggle_install">Installation <a id="arrow">▼</a></label>
+              <ul class="submenu">
+                <li><a href="/install/client.html">Client</a></li>
+                <li><a href="/install/server.html">Serveur</a></li>
+              </ul>
+          </li>
+          <li><a href="/downloads.html">Téléchargements</a></li>
+          <li><a href="http://docs.dont-play-together.fr">Documentations</a></li>
+          <li><a href="/rules.html">Règles</a></li>
+          <li><a href="/others.html">Autres</a></li>
+        </ul>
+      </navi>
+    </header>
+    <div class="content">
+      <h1>Installation du client</h1>
+      <div>
+        <div id="windows">
+          <h2>Windows :</h2>
+          <p>Pour installer le client de jeu sur windows, rendez-vous sur la page de <a href="/downloads.html" class="orange">téléchargement</a> et téléchargez la version correspondante à votre système d'exploitation. <br>Exécutez le fichier et suivez les instructions d'installation. Vous pourrez alors lancer le jeu via le raccourci sur votre bureau ! <br>Si le jeu ne se lance pas ou se ferme tout seul, veuillez nous contacter sur discord via le lien suivant : <a href="https://discord.gg/yZwuNqN" class="orange">Dwight Studio's Hub</a></p>
+        </div>
+        <div id="linux">
+          <h2>Debian :</h2>
+          <p>Pour installer le client de jeu sur les distributions basées sur Debian, rendez-vous sur la page de <a href="/downloads.html" class="orange">téléchargement</a> et téléchargez la version correspondante à votre système d'exploitation. <br><br>Ouvrez un terminal à l'emplacement du fichier et tapez la commande suivante :<br>
+          <div class="lines">
+            <p class="in_lines"><a class="light_gray">1.</a> sudo dpkg -i dpt_1.0.0-BETA_Linux.deb</p>
+          </div><br>
+          <p>Vous pourrez lancer le jeu en cliquant sur le raccourci dans le dock. <br>Si le jeux ne se lance pas ou se ferme tout seul, veuillez nous contacter sur discord via le lien suivant : <a href="https://discord.gg/yZwuNqN" class="orange">Dwight Studio's Hub</a>
+        </div>
+        <div>
+          <p><a class="red">Pour les utilisateurs de l'environement GNOME</a>, afin d'obtenir une immersion optimal, il est nécessaire de cacher le dock. Pour cela, dans les paramètres, il y'a une option "Masquer automatiquement le dock". Il est également conseiller de cacher la barre en haut de l'écran. Pour ce faire rendez-vous sur <a href="https://extensions.gnome.org/extension/545/hide-top-bar/" class="orange">Gnome.org</a> et installez l'extension "Intégration GNOME Shell" pour votre navigateur et suivez la procédure afin d'installer le connecteur d'extension. Un fois fait, il suffit de raffraîchir la page Gnome.org et de cliquer sur le boutton Off pour activer l'extension. La barre devrait alors se cacher.</p>
+        </div>
+        <div id="mac">
+          <h2>Mac :</h2>
+          <p>A venir... Peut-être... Ou pas (=</p>
+        </div>
+      </div>
+    </div>
+    <footer id="copyright">
+      <h4 id="copyright_text">© Copyright 2020, Dwight Studio (GamerMine, WhiteRed & Deleranax).</h4>
+    </footer>
+  </body>
+</html>

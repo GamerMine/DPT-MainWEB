@@ -1,0 +1,159 @@
+@media screen and (max-width: 1280px)
+{
+  .content {
+    margin: 0;
+    font-family: "VT323";
+    height: 100%;
+  }
+
+  h1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 150px;
+  }
+
+  h2 {
+    font-size: 100px;
+  }
+
+  p {
+    margin-left: 60px;
+    font-size: 60px;
+    margin-right: 60px;
+  }
+
+  span {
+    font-size: 100px;
+    margin: 0;
+    height: 100%;
+    width: 80px;
+  }
+
+  .button {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #FF5721;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-size: 100px;
+  }
+
+  #windows {
+    position: relative;
+    margin: 0;
+    width: 0%;
+    margin-left: 28%;
+  }
+
+  #debian {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+
+  #win_img {
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(95, 95, 95, 0.5);
+    padding-bottom: 120px;
+    padding-top: 62px;
+  }
+
+  #win_text {
+    position: relative;
+    margin: 0;
+    top: 90px;
+    left: 56px;
+  }
+
+  #win_download_button {
+    position: relative;
+    bottom: 140px;
+    left: 60px;
+  }
+
+  #deb_img {
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(95, 95, 95, 0.5);
+    margin-left: 34px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 98px;
+    padding-bottom: 167px;
+  }
+
+  #deb_text {
+    position: relative;
+    margin: 0;
+    top: -550px;
+    left: 348px;
+  }
+
+  #debc_download_button {
+    position: relative;
+    bottom: 55px;
+    left: -344px;
+  }
+
+  #git_img {
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(95, 95, 95, 0.5);
+    padding-bottom: 114px;
+    padding-top: 30px;
+  }
+
+  #web_text {
+    position: relative;
+    margin: 0;
+    top: 96px;
+    left: 52px;
+  }
+
+  #client_text {
+    position: relative;
+    margin: 0;
+    top: 96px;
+    left: 78px;
+  }
+
+  #web_download_button {
+    position: relative;
+    bottom: 142px;
+    left: 80px;
+  }
+
+  #client_download_button {
+    position: relative;
+    bottom: 142px;
+    left: 80px;
+  }
+
+  #dpt_web {
+    margin: 0;
+    width: 18%;
+    margin-left: 60px;
+  }
+
+  #dpt_client {
+    margin: 0;
+    width: 18%;
+    margin-left: 275px;
+  }
+
+  #select1 {
+    width: 100%;
+    margin: 0;
+    margin: 0px 0px;
+  }
+
+  #select2 {
+    width: 100%;
+    margin: 0;
+    margin: 0px 0px;
+  }
+}

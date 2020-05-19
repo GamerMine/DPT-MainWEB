@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Site officiel de Don't Play Together</title>
+    <link rel="icon" href="/img/favicon.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_main.css">
+    <link rel="stylesheet" href="/css/install_server.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_server.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="head">
+      <a id="img_link" href="/index.html">
+        <img src="/img/DPT.png" alt="" id="dpt_img">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="http://join.dont-play-together.fr">Jouer</a></li>
+          <li class="deroulant"><a href="#">Installation</a>
+              <ul class="sous">
+                <li><a href="/install/client.html">Client</a></li>
+                <li><a href="/install/server.html">Serveur</a></li>
+              </ul>
+          </li>
+          <li><a href="/downloads.html">Téléchargements</a></li>
+          <li><a href="http://docs.dont-play-together.fr">Documentations</a></li>
+          <li><a href="/rules.html">Règles</a></li>
+          <li><a href="/others.html">Autres</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header id="mobile">
+      <a id="img_link" href="/index.html">
+        <img src="/img/DPT.png" alt="" id="dpt_img">
+      </a>
+      <navi id="nav">
+        <input id="menu_check" type="checkbox" class="menu_check">
+        <label for="menu_check" class="menu_toggle">&#9776;</label>
+        <ul class="menu">
+          <li><a href="http://join.dont-play-together.fr">Jouer</a></li>
+          <li><a href="#"></a>
+            <input id="menu_check_install" type="checkbox" class="menu_check_install">
+            <label for="menu_check_install" class="menu_toggle_install">Installation <a id="arrow">▼</a></label>
+              <ul class="submenu">
+                <li><a href="/install/client.html">Client</a></li>
+                <li><a href="/install/server.html">Serveur</a></li>
+              </ul>
+          </li>
+          <li><a href="/downloads.html">Téléchargements</a></li>
+          <li><a href="http://docs.dont-play-together.fr">Documentations</a></li>
+          <li><a href="/rules.html">Règles</a></li>
+          <li><a href="/others.html">Autres</a></li>
+        </ul>
+      </navi>
+    </header>
+    <div class="content">
+      <h1>Installation du serveur non-officiel</h1>
+      <div>
+        <div id="linux">
+          <p>Le tutoriel proposé ici, permet d'installer un serveur non-officiel pour le jeu Don't Play Together, sur une machine avec un système d'exploitation comportant un noyau Linux. Pour ce tutoriel, nous vous recommendons Debian 10 mais tout autre systèmes d'exploitation basé sur Debian, peut également fonctionner. Vous devrez absolument avoir un accès root pour pouvoir installer le serveur. Le serveur devra comporter une connexion Internet stable.<a class="red"> Si vous louez un serveur chez un hébergeur, il est possible que vous ne puissiez pas modifier le fichier de configuration de php. Contactez votre hébergeur pour en savoir plus.</a><br><br>Pour commencer, il faut installer les packages suivants :</p>
+          <ul>
+            <li>apache2</li>
+            <li>php</li>
+            <li>git</li>
+          </ul>
+          <p><br>Vous pouvez faire cela grâçe à la commande suivante (cette commande peut prendre du temps car le système va se mettre à jour en même temps):</p>
+          <div class="lines">
+            <p class="in_lines"><a class="light_gray">1.</a> apt-get -y update && apt-get -y upgrade && apt-get -y install apache2 php git</p>
+          </div>
+          <p>Accédez ensuite au dossier /var/www/html puis copier le repositorie <a class="orange" href="https://github.com/Deleranax/DPT-Web.git">DPT-Web</a>. Pour se faire tapez les commandes suivante : </p>
+          <div class="lines">
+            <p class="in_lines"><a class="light_gray">1.</a> cd /var/www/html<br><a class="light_gray">2.</a> git clone https://github.com/Deleranax/DPT-Web.git /var/www/html/</p>
+          </div>
+          <p>Maintenant, il faut éditer la configuration de php :<br><a class="red">A noter que la version de php qui est utilisé dans ce tutoriel, est la version 7.3. L'emplacement du fichier de configuration ainsi que la ligne à modifier peuvent changer !!</a></p>
+          <div class="lines">
+            <p class="in_lines"><a class="light_gray">1.</a> nano /etc/php/7.3/apache2/php.ini</p>
+          </div>
+          <p>Il faut changer la ligne suivante :</p>
+          <div class="lines">
+            <p class="in_lines"><a class="light_gray">1.</a> output_buffering = 4096 A REMPLACER PAR output_buffering = off</p>
+          </div>
+          <p>Il ne reste plus qu'à démarrer Apache 2 et le tour est joué !! :</p>
+          <div class="lines">
+            <p class="in_lines"><a class="light_gray">1.</a> systemctl enable --now apache2</p>
+          </div>
+          <p>Voilà, votre serveur Don't Play Together est lancé. Si vous avez le moindre problème avec l'une de ces commandes, ou que vous avez des erreurs, vous pouvez nous contacter sur discord via le lien suivant : <a class="orange" href="https://discord.gg/yZwuNqN">Dwight Studio's Hub</a></p><br>
+        </div>
+      </div>
+    </div>
+    <footer id="copyright">
+      <h4 id="copyright_text">© Copyright 2020, Dwight Studio (GamerMine, WhiteRed & Deleranax).</h4>
+    </footer>
+  </body>
+</html>
