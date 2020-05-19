@@ -59,7 +59,7 @@
       <h1>Installation du serveur non-officiel</h1>
       <div>
         <div id="linux">
-          <p>Le tutoriel proposé ici, permet d'installer un serveur non-officiel pour le jeu Don't Play Together, sur une machine avec un système d'exploitation comportant un noyau Linux. Pour ce tutoriel, nous vous recommendons Debian 10 mais tout autre systèmes d'exploitation basé sur Debian, peut également fonctionner. Vous devrez absolument avoir un accès root pour pouvoir installer le serveur. Le serveur devra comporter une connexion Internet stable.<a class="red"> Si vous louez un serveur chez un hébergeur, il est possible que vous ne puissiez pas modifier le fichier de configuration de php. Contactez votre hébergeur pour en savoir plus.</a><br><br>Pour commencer, il faut installer les packages suivants :</p>
+          <p>Le tutoriel proposé ici, permet d'installer un serveur non-officiel pour le jeu Don't Play Together, sur une machine avec un système d'exploitation comportant un noyau Linux. Pour ce tutoriel nous vous recommendons Debian 10, mais tout autre système d'exploitation basé sur Debian peut également fonctionner. Vous devrez absolument avoir un accès root pour pouvoir installer le serveur. Le serveur devra comporter une connexion Internet stable.<a class="red"> Si vous louez un serveur chez un hébergeur, il est possible que vous ne puissiez pas modifier le fichier de configuration de php. Contactez votre hébergeur pour en savoir plus.</a><br><br>Pour commencer, il faut installer les packages suivants :</p>
           <ul>
             <li>apache2</li>
             <li>php</li>
@@ -69,19 +69,19 @@
           <div class="lines">
             <p class="in_lines"><a class="light_gray">1.</a> apt-get -y update && apt-get -y upgrade && apt-get -y install apache2 php git</p>
           </div>
-          <p>Accédez ensuite au dossier /var/www/html puis copier le repositorie <a class="orange" href="https://github.com/Deleranax/DPT-Web.git">DPT-Web</a>. Pour se faire tapez les commandes suivante : </p>
+          <p>Accédez ensuite au dossier /var/www/html puis copier le repository <a class="orange" href="https://github.com/Deleranax/DPT-Web.git">DPT-Web</a>. Pour se faire tapez les commandes suivantes : </p>
           <div class="lines">
             <p class="in_lines"><a class="light_gray">1.</a> cd /var/www/html<br><a class="light_gray">2.</a> git clone https://github.com/Deleranax/DPT-Web.git /var/www/html/</p>
           </div>
-          <p>Maintenant, il faut éditer la configuration de php :<br><a class="red">A noter que la version de php qui est utilisé dans ce tutoriel, est la version 7.3. L'emplacement du fichier de configuration ainsi que la ligne à modifier peuvent changer !!</a></p>
+          <p>Maintenant, il faut éditer la configuration de php :<br><a class="red">A noter que la version de php qui est utilisée dans ce tutoriel, est la version 7.3. L'emplacement du fichier de configuration ainsi que la ligne à modifier peuvent changer !</a></p>
           <div class="lines">
             <p class="in_lines"><a class="light_gray">1.</a> nano /etc/php/7.3/apache2/php.ini</p>
           </div>
           <p>Il faut changer la ligne suivante :</p>
           <div class="lines">
-            <p class="in_lines"><a class="light_gray">1.</a> output_buffering = 4096 A REMPLACER PAR output_buffering = off</p>
+            <p class="in_lines"><a class="light_gray">1.</a> output_buffering = 4096 À REMPLACER PAR output_buffering = off</p>
           </div>
-          <p>Il ne reste plus qu'à démarrer Apache 2 et le tour est joué !! :</p>
+          <p>Il ne reste plus qu'à démarrer Apache 2 et le tour est joué ! :</p>
           <div class="lines">
             <p class="in_lines"><a class="light_gray">1.</a> systemctl enable --now apache2</p>
           </div>
