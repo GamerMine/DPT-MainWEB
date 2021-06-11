@@ -8,7 +8,7 @@
     <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_main.css" />
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile/m_index.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -58,38 +58,38 @@
     </header>
     <img id="top_DPT_img" src="/img/index_main_DPT.jpg" alt="">
     <div class="content">
-      <div id="explaining" data-aos="slide-right">
+      <div id="explaining" data-aos="slide-right" data-aos-duration="1500">
         <h2>C'est quoi Don't Play Together ?</h2>
         <p>Don't Play Together est un jeu interactif basé sur des votes dans lequel vous devrez survivre aux différents malus/bonus que les votes ont. Il est gratuit, open-source et réalisé grâce à la bibliothèque <a class="orange" href="https://www.pygame.org/news">Pygame</a> sur <a class="orange" href="https://www.python.org/">Python</a>. Ce jeu à été développé en 2 mois et demi et est sujet à diverses changements.</p>
       </div>
     </div>
-    <img id="top_DPT_img" src="/img/index_editor_DPT.jpg" alt="" data-aos="fade-up">
+    <img id="top_DPT_img" src="/img/index_editor_DPT.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
     <div class="content">
-      <div id="edit_game" data-aos="slide-left">
+      <div id="edit_game" data-aos="slide-left" data-aos-duration="1500">
         <h2>Créez vos propres niveaux !</h2>
         <p>Avec notre éditeur intégré, vous pourrez alors créer une infinité de niveau customisé !</p>
       </div>
     </div>
-    <img id="top_DPT_img" src="/img/index_save_DPT.jpg" alt="" data-aos="fade-up">
-    <div class="content" data-aos="slide-right">
+    <img id="top_DPT_img" src="/img/index_save_DPT.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
+    <div class="content" data-aos="slide-right" data-aos-duration="1500">
       <div id="save_game">
         <h2>Sauvegardez vos créations !</h2>
         <p>Après avoir édité votre niveau, vous pouvez le sauvegarder grâce au raccourci CTRL+S et ainsi vous pourrez y jouer ou bien le rééditer à l'infini...</p>
       </div>
     </div>
-    <img id="top_DPT_img" src="/img/index_play_DPT.jpg" alt="" data-aos="fade-up">
+    <img id="top_DPT_img" src="/img/index_play_DPT.jpg" alt="" data-aos="fade-up" data-aos-duration="1500">
     <div class="content">
-      <div id="play_game" data-aos="slide-left">
+      <div id="play_game" data-aos="slide-left" data-aos-duration="1500">
         <h2>Jouez !</h2>
         <p>Le lancement du jeu se fait en 1 clique, alors n'hésitez plus !</p>
       </div>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 1500
-      });
-    </script>
+    AOS.init({
+      disable: 'mobile'
+    });
+  </script>
     <footer id="copyright">
       <h4 id="copyright_text">© Copyright 2020, Dwight Studio (GamerMine, WhiteRed & Deleranax).</h4>
     </footer>

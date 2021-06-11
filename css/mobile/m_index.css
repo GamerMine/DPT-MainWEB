@@ -1,9 +1,5 @@
 @media screen and (max-width: 1280px)
 {
-  body {
-    margin: 0;
-  }
-
   .content {
     animation-name: fade-in;
     animation-duration: 4s;
