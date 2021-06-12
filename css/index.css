@@ -10,6 +10,18 @@
   z-index: 50;
 }
 
+#version2 {
+  width: 100%;
+  background-color: #FF5721;
+  margin: 0 auto;
+  display: inline-block;
+  margin-top: -4px;
+  font-family: "VT323";
+  color: rgb(255, 255, 255);
+  height: 100%;
+  text-align: center;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0%;
